@@ -5,7 +5,7 @@ export * from './setupLanguageFeatures';
 export * from './common/constants';
 export * from './theme';
 
-export { EntityContextType, StmtContextType } from 'dt-sql-parser';
+export { EntityContextType, StmtContextType } from './doris-sql-parser';
 
 export type {
 	WordRange,
@@ -15,4 +15,4 @@ export type {
 	ParseError,
 	EntityContext,
 	StmtContext
-} from 'dt-sql-parser';
+} from './doris-sql-parser';

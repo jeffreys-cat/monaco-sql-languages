@@ -1,5 +1,5 @@
+import { EntityContext, Suggestions } from './doris-sql-parser';
 import { languages, Emitter, IEvent, editor, Position, IRange } from './fillers/monaco-editor-core';
-import { EntityContext, Suggestions } from 'dt-sql-parser';
 
 /**
  * A completion item.

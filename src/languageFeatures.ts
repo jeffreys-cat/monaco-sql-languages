@@ -10,7 +10,7 @@ import {
 } from './fillers/monaco-editor-core';
 import { debounce } from './common/utils';
 import { BaseSQLWorker } from './baseSQLWorker';
-import type { ParseError } from 'dt-sql-parser';
+import type { ParseError } from './doris-sql-parser';
 import type { LanguageServiceDefaults } from './monaco.contribution';
 
 export interface WorkerAccessor<T extends BaseSQLWorker> {
@@ -126,7 +126,7 @@ function toDiagnostics(_resource: Uri, diag: ParseError): editor.IMarkerData {
 		endColumn: diag.endColumn,
 		message: diag.message,
 		code: undefined, // TODO: set error type
-		source: 'dt-sql-parser'
+		source: 'doris-sql-parser'
 	};
 }
 

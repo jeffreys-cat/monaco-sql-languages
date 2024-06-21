@@ -1,6 +1,6 @@
-import { BasicSQL } from 'dt-sql-parser/dist/parser/common/basicSQL';
+import { BasicSQL } from './doris-sql-parser/parser/common/basicSQL';
 import { worker } from './fillers/monaco-editor-core';
-import { Suggestions, ParseError, EntityContext } from 'dt-sql-parser';
+import { Suggestions, ParseError, EntityContext } from './doris-sql-parser';
 import { Position } from './fillers/monaco-editor-core';
 
 export interface ICreateData {
